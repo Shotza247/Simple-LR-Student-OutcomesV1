@@ -1,0 +1,37 @@
+Machine learning use-case: if i study hard enough can i improve my score for my certification exam...
+Given:
+Hours_of_Study | Test_Score
+2.5	61
+3.0	52
+5.5	63
+6.5	57
+7.0	62
+8.0	60
+10.0	75
+11.0	60
+12.0	74
+13.0	76
+14.5	77
+15.0	85
+16.0	81
+16.5	76
+17.5	84
+20.0	77
+20.5	87
+22.0	88
+24.0	94
+26.0	89
+27.5	89
+28.0	88
+28.5	90
+30.0	89
+31.0	90
+
+passing score is 75..
+
+Our ML model will try and understand the relationship between the hours spent to study(Input) and the Test_scores(output).
+From this it will be able to predict what are the likelihood for new input in relation to the output
+
+Transfer or transformation function: is any function that takes the weighted sum of the inputs to a neuron and produces an output.
+Activation function: which is a special type of transfer function that introduces non-linearity into the neural network..
+These occur within one computational code.
