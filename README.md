@@ -1,5 +1,3 @@
-AI generated for improved evaluation of my notebook and a summary of what i had in mind when i build this simple model.
-
 # Student Mark Prediction Model 📚
 ## Problem Statement 
 ### NB: Truth be told, there's actually a lot more variable go into passing a certification exam, and i will continously increment on this project as a result of that.
