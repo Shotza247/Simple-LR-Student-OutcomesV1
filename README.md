@@ -140,21 +140,28 @@ Monitor your actual scores vs. predicted scores to identify:
 
 ## Model Architecture
 
-### Input Features
-- **Hours_of_Study:** Continuous numeric value (0-35 hours)
+See [`architecture-diagram-v2.md`](architecture-diagram-v2.md) for the full pipeline diagram.
+
+### Models
+- **Linear Regression Pipeline:** `Pipeline([('model', LinearRegression())])`
+- **Polynomial Regression Pipeline:** `Pipeline([('poly', PolynomialFeatures(degree=2)), ('model', LinearRegression())])`
 
 ### Processing
 ```
-Linear Equation: y = mx + b
-Where:
-  y = Predicted Test Score
+Linear:     y = mx + b
+Polynomial: y = ax² + bx + c
   x = Hours of Study
-  m = Slope (approximately 2.5)
-  b = Intercept (approximately 25)
+  y = Predicted Test Score
 ```
+
+### Experiment Tracking
+- **MLflow `autolog()`** logs params, metrics, and model artifacts for both pipelines
+- **Experiment name:** `Student-Score-Prediction`
+- **UI:** `mlflow ui --host 0.0.0.0 --port 5000` → browse `http://<LAN-IP>:5000`
 
 ### Output
 - **Predicted Test Score:** Continuous value (0-100 range)
+- **Artifacts:** CSVs in `data/`, pie chart in `data/processed/`, models in `mlruns/`
 
 ---
 
