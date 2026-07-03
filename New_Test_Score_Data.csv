@@ -9,7 +9,7 @@ Student_ID,Name,Email Address,Phone Number,Hours_of_Study,Test_Score
 8,Jacob Smith,jacob.smith10@data-ml.org,(555) 432-1098,11.0,60.0
 9,Isabella Brown,isabella.brown02@data-ml.org,(555) 567-8901,12.0,74.0
 10,Michael Johnson,michael.johnson93@data-ml.org,(555) 012-3456,13.0,76.0
-11,Olivia Davis,olivia.davis84@data-ml.org,(555) 345-6789,14.5,77.0
+11,Olivia Davis,olivia.davis84@data-ml.org,(555) 345-6789,14.5,67.0
 12,William Wilson,william.wilson75@data-ml.org,(555) 678-9012,15.0,85.0
 13,Emily Martinez,emily.martinez66@data-ml.org,(555) 901-2345,16.0,81.0
 14,Alexander Taylor,alexander.taylor54@data-ml.org,(555) 123-4001,16.5,76.0
@@ -17,9 +17,9 @@ Student_ID,Name,Email Address,Phone Number,Hours_of_Study,Test_Score
 16,James White,james.white23@data-ml.org,(555) 890-1234,20.0,77.0
 17,Amelia Hall,amelia.hall11@data-ml.org,(555) 210-9876,20.5,87.0
 18,Benjamin King,benjamin.king09@data-ml.org,(555) 765-4321,22.0,88.0
-19,Harper Green,harper.green91@data-ml.org,(555) 345-0987,24.0,94.0
+19,Harper Green,harper.green91@data-ml.org,(555) 345-0987,24.0,44.0
 20,Daniel Adams,daniel.adams80@data-ml.org,(555) 678-0123,26.0,89.0
-21,Evelyn Baker,evelyn.baker77@data-ml.org,(555) 012-4567,27.5,89.0
+21,Evelyn Baker,evelyn.baker77@data-ml.org,(555) 012-4567,27.5,59.0
 22,Logan Carter,logan.carter65@data-ml.org,(555) 432-8765,28.0,88.0
 23,Mia Perez,mia.perez58@data-ml.org,(555) 876-1234,28.5,90.0
 24,Henry Lewis,henry.lewis49@data-ml.org,(555) 210-5432,30.0,89.0
