@@ -45,29 +45,29 @@ Original baseline data containing 25 student records (see Test_Score_Prediction_
 | 10.0 | 75 |
 | 15.0 | 85 |
 | 20.5 | 87 |
-| 24.0 | 94 |
+| 24.0 | 44 |
 | 31.0 | 90 |
 | ... | ... |
 
-### Key Statistics
+### Key Statistics (combined 50-student dataset)
 ```
-Mean Test Score:      58.24%
-Median Test Score:    61.50%
-Max Test Score:       94.00%
+Mean Test Score:      56.44%
+Median Test Score:    60.00%
+Max Test Score:       90.00%
 Min Test Score:       0.00%
-Exam Pass Rate:       42.00% (score ≥ 50)
+Exam Pass Rate:       70.00% (score ≥ 50)
 Passing Threshold:    75 points
 ```
 
 ### Student Performance Breakdown
-- **Passed Exam (≥75):** 21 students
-- **Failed Exam (<75):** 29 students
-- **Maximum Test Score of Passed Students:** 94.0%
+- **Passed Exam (≥75):** 18 students
+- **Failed Exam (<75):** 32 students
+- **Maximum Test Score of Passed Students:** 90.0%
 - **Minimum Test Score of Passed Students:** 75.0%
-- **Average Test Score of Passed Students:** 83.93%
+- **Average Test Score of Passed Students:** 83.48%
 - **Maximum Test Score of Failed Students:** 74.0%
 - **Minimum Test Score of Failed Students:** 0.0%
-- **Average Test Score of Failed Students:** 39.63%
+- **Average Test Score of Failed Students:** 41.22%
 
 ---
 
@@ -75,15 +75,16 @@ Passing Threshold:    75 points
 
 ### Evaluation Metrics
 ```
-Mean Squared Error (MSE):  377.7
-R² Score:                  0.6
-Accuracy Score:            60.00%
+Mean Squared Error (MSE):  367.55
+R² Score:                  0.61
+Root Mean Squared Error:   19.17
+Accuracy Score:            61.00%
 ```
 
 **What this means:**
-- **R² = 0.60:** The model explains 60% of the variance in test scores
-- **MSE = 377.7:** Average prediction error is approximately an RMSE of about 19.43 units away from the actual values
-- **Accuracy = 60%:** The model correctly predicts outcomes 60% of the time
+- **R² = 0.61:** The model explains 61% of the variance in test scores
+- **MSE = 367.55:** Average squared prediction error; RMSE of ~19.17 units from actual values
+- **Accuracy = 61%:** The model correctly predicts outcomes 61% of the time
 
 ---
 
@@ -105,9 +106,9 @@ There is a **clear positive relationship** between study hours and test scores:
 ### 4. Pass Rate Distribution
 ```
 Score Distribution:
-  Failed (<75):    24% of students
-  Passing (75+):   45% of students
-  Class Exam Pass rate: 42% passed exam
+  Failed (<75):    64% of students
+  Passing (75+):   36% of students
+  Class Exam Pass rate: 36% passed exam
 ```
 
 ---
@@ -255,7 +256,7 @@ pip install pandas numpy scikit-learn matplotlib
 | **Correlation** | Strong positive: More study = Higher scores |
 | **Pass Threshold** | 12-15 hours minimum for 75+ score |
 | **Optimal Study** | 20-25 hours for consistent 85+ performance |
-| **Model Accuracy** | 76% - Good for initial planning |
+| **Model Accuracy** | R² 0.61 — reasonable for a single-feature model |
 | **Next Step** | Use for study planning; combine with quality prep |
 
 ---
