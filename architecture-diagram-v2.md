@@ -20,7 +20,7 @@ flowchart TD
 
     J --> CSVEXP[data/processed/\nNew_Test_Score_Data.csv\nX_train.csv - X_test.csv\nY_train.csv - Y_test.csv]
 
-    J --> MLSETUP[MLflow Setup\nautolog enabled\nexperiment: Student-Score-Prediction\ntracking URI: http://0.0.0.0:5000]
+    J --> MLSETUP[MLflow Setup\nautolog enabled\nexperiment: Student-Score-Prediction\ntracking URI: http://127.0.0.1:5000]
 
     MLSETUP --> LR[Linear Pipeline\nPipeline - LinearRegression\nrun name: LinearRegression]
     MLSETUP --> POLY[Polynomial Pipeline\nPipeline - PolynomialFeatures deg2 + LinearRegression\nrun name: PolynomialRegression-deg2]
@@ -40,7 +40,7 @@ flowchart TD
 ## Server Launch
 
 ```bash
-mlflow ui --host 0.0.0.0 --port 5000
+mlflow ui --host 127.0.0.1 --port 5000
 ```
 
 Browse to `http://<your-LAN-IP>:5000` — find your IP with `ipconfig` (Windows) or `ip a` (Linux/Mac).
